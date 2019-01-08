@@ -31,7 +31,17 @@ class PhoneBook
       results[i] = [(first_combination & dictionary), (second_combination & dictionary)]
     end
     
+    final_words = []
     
+    results.each do |key, combinations|                                                                                                                                                                  
+      next if combinations.first.nil? || combinations.last.nil?
+      combinations.first.product(combinations.last).each do |words|
+        final_words << words
+      end
+    end
+    
+    final_words << (keys.shift.product(*keys).map(&:join) & dictionary).join(", ") # matche with all character
+    final_words
     
   end
   
