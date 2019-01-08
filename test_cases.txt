@@ -1,0 +1,10 @@
+
+object = NumberToWord.new
+
+1. final_words = object.letter_combinations("6686787825")
+
+=> [["noun", "struck"], ["onto", "struck"], ["motor", "truck"], ["motor", "usual"], ["nouns", "truck"], ["nouns", "usual"], "motortruck"]
+
+2. final_words = object.letter_combinations("2282668687")
+
+=> [["act", "amounts"], ["act", "contour"], ["bat", "amounts"], ["bat", "contour"], ["cat", "amounts"], ["cat", "contour"], ["acta", "mounts"], "catamounts"]
